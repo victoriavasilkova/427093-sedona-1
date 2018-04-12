@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Василькова](https://up.htmlacademy.ru/adaptive/14/user/427093).
-* Наставник: `Неизвестно`.
+* Наставник: Анастасия Мусаэльян.
 
 ---
 
