@@ -3,116 +3,109 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main_nav__button-close" type="button">Закрыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a>Главная</a>
+    <div class="wrapper">
+      <header class="header">
+        <button class="header__menu-toggle" type="button">Закрыть меню</button>
+        <nav class="menu">
+          <div class="main-nav__wrapper">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="#">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="photo.html">Фото и видео</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link menu__link--active">Форма отзыва</a>
+              </li>
+              <li class="menu__link" class="menu__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <a class="header__logo-link">
+          <img class="header__logo" src="img/logotype-mobile" width="102" height="83" alt="City of Sedona">
+        </a>
+      </header>
+      <main class="page">
+        <div class="intro">
+          <img class="intro__text" src="img/sedona.png" alt="Sedona" width="229" height="39">
+        </div>
+        <h1 class="page-title">Оставьте свой отзыв</h1>
+        <h1 class="page__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</h1>
+        <section class="reviews">
+          <form class="reviews__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="reviews__block reviews__block--introduction">
+              <p class="reviews__block-title">Представьтесь:</p>
+              <label class="reviews__label" for="name">Имя<sup>*</sup>:</label>
+              <input class="reviews__field field" type="text" name="name" id="name" placeholder="Петр">
+              <label class="reviews__label" for="surname">Фамилия<sup>*</sup>:</label>
+              <input class="reviews__field field" type="text" name="surname" id="surname" placeholder="Иванов">
+              <label class="reviews__label" for="patronymic">Отчество:</label>
+              <input class="reviews__field field" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+            </div>
+            <div class="reviews__block reviews__block--contacts">
+              <p class="reviews__block-title">Контактная информация:</p>
+              <label class="reviews__label" for="telefon">Контактный телефон<sup>*</sup>:</label>
+              <input class="reviews__field field" type="tel" name="telefon" id="telefon" placeholder="Введите телефон">
+              <div class="reviews__block-icon" aria-label="Телефон"></div>
+              <label class="reviews__label" for="email">Электронная почта<sup>*</sup>:</label>
+              <input class="reviews__field field" type="email" name="email" id="email" placeholder="Введите e-mail">
+              <div class="reviews__block-icon" aria-label="E-mail"></div>
+            </div>
+            <div class="reviews__block reviews__block--experience">
+              <p class="reviews__block-title">Ваше общее впечатление:</p>
+              <label class="experience__label" for="answer"></label>
+              <input class="reviews__radio radio" type="radio" name="answer" value="положительное" checked>Скорее положительное
+              <label class="experience__label"></label>
+              <input class="reviews__radio radio" type="radio" name="answer" value="отрицательное">Скорее отрицательное
+              <label class="experience__label"></label>
+              <input class="reviews__radio radio" type="radio" name="answer" value="нейтрально">Затрудняюсь ответить
+            </div>
+            <div class="reviews__block reviews__block--places">
+              <p class="reviews__block-title">Посещенные достопримечательности:</p>
+              <input class="reviews__checkbox checkbox" type="checkbox" name="bridge" id="bridge-field" checked>
+              <label class="places__label" for="bridge-field">Мост Дьявола</label>
+              <input class="reviews__checkbox checkbox" type="checkbox" name="mountain" id="mountain-field" checked>
+              <label class="places__label" for="mountain-field">Гора-колокол</label>
+              <input class="reviews__checkbox checkbox" type="checkbox" name="park" id="park-field" checked>
+              <label class="places__label" for="park-field">Слайд-парк</label>
+              <input class="reviews__checkbox checkbox" type="checkbox" name="rocks" id="rocks-field">
+              <label class="places__label" for="rocks-field">Красные скалы</label>
+            </div>
+            <div class="reviews__block reviews__block--impression">
+              <p class="reviews__block-title">Опишите свои эмоции:</p>
+              <textarea class="reviews__field field field--comment" name="comment" id="comment-field" rows="6">Опишите подробно все свои восторги</textarea>
+            </div>
+            <button class="button reviews__button" type="submit">Отправить отзыв</button>
+          </form>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__hashtag">#Visitsedona</p>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Твиттер"></a>
             </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фото и видео</a>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Фейсбук"></a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Форма отзыва</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="https://youtube.com" aria-label="Youtube"></a>
             </li>
           </ul>
         </div>
-      </nav>
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-mobile" width="102" height="83" alt="City of Sedona">
-      </a>
-      <button class="main-nav__button-open" type="button">Открыть меню</button>
-      <ul class="main-nav__list item-list">
-      </ul>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Седона</h1>
-      <div class="page-main__intro intro">
-        <img class="intro__text" src="img/sedona.png" alt="Sedona" width="229" height="39">
-      </div>
-      <section class="reviews">
-        <header class="reviews__header">
-          <h2 class="reviews__title">Оставьте свой отзыв</h2>
-          <p class="reviews__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-          </header>
-          <div class="reviews__wrapper">
-            <form class="reviews__form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="reviews__introduction introduction">
-                <h2 class="reviews__title">Представьтесь:</h2>
-                <label class="introduction__label" for="name">Имя<sup>*</sup>:</label>
-                <input class="introduction__field" type="text" name="name" id="name" placeholder="Петр">
-                <label class="introduction__label" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="introduction__field" type="text" name="surname" id="surname" placeholder="Иванов">
-                <label class="introduction__label" for="patronymic">Отчество:</label>
-                <input class="introduction__field" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
-              </div>
-              <div class="reviews__contacts contacts">
-                <h2 class="reviews__title">Контактная информация:</h2>
-                <label class="contacts__label" for="telefon">Контактный телефон<sup>*</sup>:</label>
-                <input class="contacts__field" type="text" name="telefon" id="telefon" placeholder="Введите телефон">
-                <button class="contacts__icon" type="button" aria-label="Телефон"></button>
-                <label class="contacts__label" for="email">Электронная почта<sup>*</sup>:</label>
-                <input class="contacts__field" type="text" name="email" id="email" placeholder="Введите e-mail">
-                <button class="contacts__icon" type="button" aria-label="E-mail"></button>
-              </div>
-              <div class="reviews__experience experience">
-                <h2 class="reviews__title">Ваше общее впечатление:</h2>
-                <label class="experience__label">
-                  <input class="experience__field" type="radio" name="answer-one" value="положительное" checked>Скорее положительное
-                </label>
-                <label class="experience__label">
-                  <input class="experience__field" type="radio" name="answer-two" value="отрицательное">Скорее отрицательное
-                </label>
-                <label class="experience__label">
-                  <input class="experience__field" type="radio" name="answer-three" value="нейтрально">Затрудняюсь ответить
-                </label>
-              </div>
-              <div class="reviews__places places">
-                <h2 class="reviews__title">Посещенные достопримечательности:</h2>
-                <input class="places__field" type="checkbox" name="bridge" id="bridge-field" checked>
-                <label class="places__label" for="bridge-field">Мост Дьявола</label>
-                <input class="places__field" type="checkbox" name="mountain" id="mountain-field" checked>
-                <label class="places__label" for="mountain-field">Гора-колокол</label>
-                <input class="places__field" type="checkbox" name="park" id="park-field" checked>
-                <label class="places__label" for="park-field">Слайд-парк</label>
-                <input class="places__field" type="checkbox" name="rocks" id="rocks-field">
-                <label class="places__label" for="rocks-field">Красные скалы</label>
-              </div>
-              <div class="reviews__impression impression">
-                <h2 class="reviews__title">Опишите свои эмоции:</h2>
-                <textarea class="impression__comment" name="comment" id="comment-field" rows="6">Опишите подробно все свои восторги</textarea>
-              </div>
-            <button class="button reviews-button" type="submit">Отправить отзыв</button>
-          </form>
+        <div class="footer__copyright">
+          <b class="footer__copyright-text">Разработано:</b>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <p class="page-footer__hashtag hashtag">#Visitsedona</p>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li>
-            <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Твиттер"></a>
-          </li>
-          <li>
-            <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Фейсбук"></a>
-          </li>
-          <li>
-            <a class="social__link social__link--youtube" href="https://youtube.com" aria-label="Youtube"></a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
