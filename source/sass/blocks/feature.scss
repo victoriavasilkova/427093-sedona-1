@@ -1,0 +1,47 @@
+.feature {
+  text-align: center;
+  padding: 30px;
+  &--icon {
+    text-align: left;
+    padding-left: 70px;
+  }
+  &--blue {
+    background-color: $base-color;
+  }
+  &--grey {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+  }
+  &--picture {
+    padding: 0;
+  }
+}
+
+.feature__title {
+  @include text(18px, 21px, bold);
+  &--blue {
+    color: $white-color;
+  }
+}
+
+.feature__description {
+  @include text(14px, 21px, normal);
+  color: $text-color;
+  &--blue {
+    color: $white-color;
+  }
+}
+
+.feature__number {
+  @include text(14px, 21px, bold);
+  color: $text-color;
+  &--blue {
+    color: $white-color;
+  }
+}
+
+.feature__image {
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}

@@ -1,0 +1,29 @@
+.photo {
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.photo__image {
+  margin-bottom: 20px;
+}
+
+.photo__title {
+  @include text(14px, 24px, bold);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.photo__author {
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-transform: none;
+  color: #333333;
+}
+
+.photo__like {
+  @include text(14px, 24px, bold);
+  padding-left: 35px;
+}

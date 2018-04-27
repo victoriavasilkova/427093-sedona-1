@@ -1,0 +1,16 @@
+.booking {
+  text-align: center;
+}
+
+.booking__title {
+  @include text(21px, 26px, bold);
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.booking__info {
+  @include text(14px, 24px, normal);
+  color: $text-color;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}

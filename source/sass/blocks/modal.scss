@@ -1,0 +1,15 @@
+.modal {
+  display: none;
+
+}
+
+.modal__title {
+    @include text(18px, 21px, bold);
+    text-align: center;
+  }
+
+.modal__description {
+    @include text(14px, 21px, normal);
+    color: $text-color;
+    text-align: center;
+}

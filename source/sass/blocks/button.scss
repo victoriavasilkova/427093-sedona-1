@@ -1,0 +1,13 @@
+.button {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 20px 30px;
+  @include text(21px, 26px, bold);
+  text-align: center;
+  background-color: $base-color;
+  color: $white-color;
+  text-transform: uppercase;
+  cursor: pointer;
+}

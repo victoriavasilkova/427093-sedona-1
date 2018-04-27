@@ -1,0 +1,31 @@
+.page__title {
+  @include text(18px, 26px, bold);
+  margin-bottom: 35px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.page__caption {
+  @include text(18px, 26px, bold);
+  margin-bottom: 35px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.page__description {
+  color: $text-color;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page__title,
+  .page__caption,
+  .page__description {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    padding: 0;
+  }
+}
