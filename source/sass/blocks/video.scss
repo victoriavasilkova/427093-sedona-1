@@ -1,0 +1,17 @@
+.video__title {
+  @include text(18px, 26px, bold);
+  margin-bottom: 35px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.video__intro {
+  color: $text-color;
+  margin-bottom: 30px;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.video {
+  margin-bottom: 150px;
+}
