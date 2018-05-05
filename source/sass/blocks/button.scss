@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  text-align: center;
+  min-width: 180px;
+  max-width: 330px;
+  margin: 0 auto;
+  padding: 20px 0;
+  border: none;
+  @include text(21px, 26px, bold);
+  text-align: center;
+  background-color: $base-color;
+  color: $white-color;
+  text-transform: uppercase;
+  cursor: pointer;
+  vertical-align: top;
+  @media ($tablet) {
+    min-width: 272px;
+    max-width: 460px;
+  }
+}

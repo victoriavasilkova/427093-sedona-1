@@ -1,0 +1,23 @@
+.booking {
+  text-align: center;
+  margin-bottom: 50px;
+  @media ($tablet) {
+  margin-bottom: 58px;
+  }
+  @media ($desktop) {
+  margin-bottom: 65px;
+  }
+}
+
+.booking__title {
+  @include text(21px, 26px, bold);
+  padding: 0 30px;
+  margin-bottom: 30px;
+}
+
+.booking__info {
+  @include text(14px, 24px, normal);
+  color: $text-color;
+  padding: 0 30px;
+  margin-bottom: 40px;
+}

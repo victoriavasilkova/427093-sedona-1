@@ -1,0 +1,8 @@
+.field {
+  @include text(18px, 26px, bold);
+  text-transform: none;
+  &--comment {
+    width: 100%;
+    resize: none;
+  }
+}

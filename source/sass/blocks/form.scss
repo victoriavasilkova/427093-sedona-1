@@ -1,0 +1,73 @@
+.form {
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 84%;
+  }
+  @media ($desktop) {
+    width: 80%;
+  }
+}
+
+@media ($tablet) {
+  .form__experience {
+    order: -1;
+    width: 50%;
+  }
+}
+
+.form__introduction {
+  @media ($tablet) {
+    width: 50%;
+    padding-left: 8%;
+  }
+  @media ($desktop) {
+    padding-left: 6%;
+  }
+}
+
+@media ($tablet) {
+  .form__contacts {
+    width: 100%;
+  }
+}
+
+@media ($tablet) {
+  .form__places {
+    width: 100%;
+  }
+}
+
+@media ($tablet) {
+  .form__impression {
+    width: 100%;
+    margin-bottom: 58px;
+  }
+}
+
+.form__places-wrapper {
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 90px;
+  }
+  @media ($desktop) {
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.form__checkbox {
+  @media ($tablet) {
+    width: 50%;
+  }
+  @media ($desktop) {
+    width: 25%;
+  }
+}
+
+.form__decoration {
+  @media ($tablet) {}
+}

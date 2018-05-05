@@ -1,0 +1,52 @@
+.modal {
+  text-align: center;
+  margin: 0 auto;
+  width: 320px;
+  box-shadow: 0 3px 3px 3px #f2f2f2;
+  &--failure {
+    padding: 0 50px;
+  }
+  @media ($tablet) {
+    width: 400px;
+  }
+  &--success {
+  @media ($tablet) {
+    width: 648px;
+    padding: 0 95px;
+  }
+  }
+}
+
+.modal__title {
+    @include text(18px, 21px, bold);
+    padding-top: 45px;
+    &--failure {
+      width: 180px;
+      margin: 0 auto;
+    }
+  }
+
+.modal__description {
+    @include text(14px, 24px, normal);
+    color: $text-color;
+    margin-bottom: 30px;
+    &--success {
+      margin-bottom: 40px;
+    }
+}
+
+.modal__button--failure {
+  padding: 20px 80px;
+  margin-bottom: 50px;
+  @media ($tablet) {
+    padding: 20px 122px;
+  }
+}
+
+.modal__button--success {
+  padding: 20px 70px;
+  margin-bottom: 20px;
+  @media ($tablet) {
+    width: 100%;
+  }
+}

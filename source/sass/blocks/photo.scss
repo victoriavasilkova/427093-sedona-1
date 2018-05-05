@@ -1,0 +1,100 @@
+.photo__list {
+  @media ($tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 84%;
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+  @media ($desktop) {
+    width: 100%;
+  }
+}
+
+.photo {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  @media ($tablet) {
+    padding: 0;
+    width: 50%;
+    border: none;
+  }
+    &--main {
+      width: 100%;
+    }
+  @media ($desktop) {
+    width: 33.333333%;
+  }
+    &--main {
+      width: 100%;
+    }
+}
+
+.photo__link {
+  display: block;
+  margin-bottom: 20px;
+  @media ($tablet) {
+    margin-bottom: 0;
+  }
+}
+
+.photo__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photo__signature {
+  display: flex;
+  flex-direction: column;
+  @media ($tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  @media ($desktop) {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $white-color;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.photo__name {
+  @include text(14px, 24px, bold);
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.photo__author {
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 5px;
+  text-transform: none;
+  color: #333333;
+  @media ($desktop) {
+    color: $white-color;
+  }
+}
+
+.photo__like {
+  position: relative;
+  @include text(14px, 24px, bold);
+  padding-left: 35px;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 21px;
+    background-image: url("../img/icon-like.svg");
+    background-repeat: no-repeat;
+    background-size: 22px 21px;
+    left: 0px;
+  }
+}

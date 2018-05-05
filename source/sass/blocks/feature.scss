@@ -1,0 +1,193 @@
+.feature {
+  position: relative;
+  text-align: center;
+  padding: 30px;
+  &--icon {
+    text-align: left;
+    padding-left: 70px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+    @media ($tablet) {
+      padding-left: 160px 6% 65px 6%;
+      width: 33.333333%;
+    }
+    @media ($desktop) {
+      padding-bottom: 85px;
+    }
+  }
+  &--icon-home {
+    padding-top: 40px;
+    @media ($tablet) {
+      padding-top: 0px;
+    }
+  }
+  &--blue {
+    background-color: $base-color;
+    @media ($tablet) {
+    width: 33.333333%;
+    padding: 50px 6%;
+    }
+  }
+  &--grey {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+    @media ($tablet) {
+    width: 33.333333%;
+    padding: 50px 6%;
+    }
+    @media ($desktop) {
+      padding-bottom: 70px;
+    }
+  }
+  &--picture {
+    padding: 0;
+    @media ($tablet) {
+    width: 66.666666%
+    }
+  }
+}
+
+.feature__title {
+  @include text(18px, 26px, bold);
+  margin: 0;
+  margin-bottom: 20px;
+  &--blue {
+    color: $white-color;
+  }
+  @media ($tablet) {
+    @include text(21px, 26px, bold);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+    &--icon {
+      text-align: center;
+      padding-top: 164px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.feature__description {
+  @include text(14px, 21px, normal);
+  color: $text-color;
+  margin: 0;
+  &--blue {
+    color: $white-color;
+  }
+  @media ($tablet) {
+    text-align:center;
+  }
+}
+
+.feature__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include text(14px, 21px, bold);
+  color: $text-color;
+  margin-bottom: 25px;
+  &::before, &::after {
+    content: " ";
+    margin: 0 4px;
+    width: 10px;
+    height: 1px;
+    background-color: $text-color;
+  }
+  &--blue {
+    color: $white-color;
+  }
+    &::before, &::after {
+      background-color: $white-color;
+    }
+}
+
+
+
+.feature__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.feature--icon-home::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 27px;
+  width: 39px;
+  height: 37px;
+  background-image: url("../img/icon-house.svg");
+  background-size: 39px 37px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  @media ($tablet) {
+    width: 75px;
+    height: 72px;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: 75px 72px;
+  }
+}
+
+.feature--icon-souvenir::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -12px;
+  width: 32px;
+  height: 38px;
+  background-image: url("../img/icon-gift.svg");
+  background-size: 32px 38px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  @media ($tablet) {
+    width: 64px;
+    height: 75px;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: 64px 75px;
+  }
+}
+
+@media ($tablet) {
+  .feature--icon-souvenir {
+    order: 1;
+  }
+}
+
+.feature--icon-food::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: -6px;
+  width: 40px;
+  height: 35px;
+  background-image: url("../img/icon-burger.svg");
+  background-size: 40px 35px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  @media ($tablet) {
+    width: 77px;
+    height: 68px;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: 77px 68px;
+  }
+}
+
+.feature-row {
+  @media ($tablet) {
+  display: flex;
+ }
+}
+
+.feature--picture-second {
+  @media ($tablet){
+    order: -1;
+  }
+}
