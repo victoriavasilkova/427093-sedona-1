@@ -12,9 +12,9 @@
       padding-bottom: 60px;
       padding-top: 0;
       width: 33.333333%;
-    }
-    @media ($desktop) {
-      padding-bottom: 85px;
+      @media ($desktop) {
+        padding-bottom: 85px;
+      }
     }
   }
   &--blue {
@@ -30,13 +30,14 @@
   }
   &--grey {
     background-color: #eeeeee;
-    border-bottom: 1px solid #d6d6d6;
+    padding: 25px 30px;
     @media ($tablet) {
     width: 33.333333%;
-    padding: 45px 6%;
+    padding: 45px 7%;
     }
     @media ($desktop) {
       padding-bottom: 70px;
+      padding: 45px 4%;
     }
   }
   &--picture {
@@ -49,6 +50,29 @@
   }
 }
 
+@media ($mobile) {
+  .feature--grey-border::after {
+    position: absolute;
+    content: " ";
+    height: 1px;
+    background-color: #dbdbdb;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .feature--grey-border::before {
+    position: absolute;
+    content: " ";
+    height: 1px;
+    background-color: #dbdbdb;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
+
 .feature--picture-second {
   @media ($tablet) {
     order: -1;
@@ -58,7 +82,7 @@
 .feature__title {
   @include text(18px, 26px, bold);
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   &--blue {
     color: $white-color;
   }
@@ -93,7 +117,7 @@
   align-items: center;
   @include text(14px, 21px, bold);
   color: $text-color;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   &--blue {
     color: $white-color;
   }

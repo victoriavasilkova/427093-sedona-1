@@ -1,11 +1,13 @@
 .field {
   @include text(18px, 26px, bold);
+  height: 58px;
   text-transform: none;
   box-sizing: border-box;
   cursor: pointer;
   &--comment {
     width: 100%;
     resize: none;
+    height: 160px;
   }
 }
 

@@ -12,6 +12,7 @@
 
 .radio__label {
   position: relative;
+  cursor: pointer;
   @include text(18px, 26px, bold);
   text-transform: none;
   margin-bottom: 0px;
@@ -31,6 +32,12 @@
     top: 50%;
     transform: translateY(-50%);
   }
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+  &:active::before {
+    background-color: #d5d5d5;
+  }
   &::after {
     content: " ";
     position: absolute;
@@ -40,6 +47,9 @@
     left: 18px;
     top: 17px;
     border-radius: 50%;
+    &:active::after {
+      background-color: #a4a4a4;
+    }
   }
 }
 

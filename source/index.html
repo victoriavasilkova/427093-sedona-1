@@ -93,7 +93,7 @@
                 <div class="feature__number">№3</div>
                 <p class="feature__description">Все интересные места находятся очень близко</p>
               </div>
-              <div class="feature feature--grey">
+              <div class="feature feature--grey feature--grey-border">
                 <h3 class="feature__title feature__title--grey">Красивая дорога</h3>
                 <div class="feature__number">№4</div>
                 <p class="feature__description">Ехать в седону из Лас-Вегаса совсем не скучно!</p>
@@ -113,7 +113,6 @@
         </section>
         <section class="map-canvas" id="map-canvas">
           <h2 class="visually-hidden">Карта</h2>
-          <!-- <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1yVoRMa07i_TqGF2b8KJzWFx0XS9yoLHy"></iframe> -->
         </section>
       </h2></main>
       <footer class="footer">
@@ -148,6 +147,7 @@
       </footer>
     </div>
     <script src="js/menu.js"></script>
-    <!--<script src="https://maps.googleapis.com/maps/api/js?AIzaSyChl-mWB1fpAZS-aIfXsvcp7HUcL-cGWYM"></script>-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChl-mWB1fpAZS-aIfXsvcp7HUcL-cGWYM&callback=initMap" async defer></script>
+    <script src="js/map.js"></script>
   </body>
 </html>

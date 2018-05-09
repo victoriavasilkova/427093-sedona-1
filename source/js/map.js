@@ -1,16 +1,13 @@
-function initialize() {
-  var mapOptions = {
-    zoom: 15,
-    center: new google.maps.LatLng(34.952413, -111.747165)
-  }
-  var map = new google.maps.Map(document.getElementById("map-canvas"),
-                                mapOptions);
+function initMap() {
+  var uluru = {lat: 34.952413, lng: -111.747165};
   var image = "../img/icon-map-marker.svg";
-  var myLatLng = new google.maps.LatLng(34.952413, -111.747165);
-  var beachMarker = new google.maps.Marker({
-    position: myLatLng,
+  var map = new google.maps.Map(document.getElementById('map-canvas'), {
+    zoom: 7,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
     map: map,
     icon: image
   });
 }
-google.maps.event.addDomListener(window, 'load', initialize);

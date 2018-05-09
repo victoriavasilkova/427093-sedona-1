@@ -3,11 +3,11 @@
   margin-bottom: 50px;
   @media ($tablet) {
   margin-bottom: 58px;
-  padding: 0 120px;
+  padding: 0 20%;
   }
   @media ($desktop) {
   margin-bottom: 65px;
-  padding: 0 310px;
+  padding: 0 30%;
   }
 }
 
@@ -23,7 +23,7 @@
 .booking__info {
   @include text(14px, 24px, normal);
   color: $text-color;
-  padding: 0 30px;
+  padding: 0 20px;
   margin-bottom: 40px;
   @media ($desktop) {
     margin-bottom: 50px;
@@ -33,6 +33,7 @@
 .booking__button  {
   width: 280px;
   @media ($tablet){
+    max-width: 456px;
     width: 456px;
   }
 }

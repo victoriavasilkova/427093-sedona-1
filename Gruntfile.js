@@ -59,13 +59,14 @@ module.exports = function(grunt) {
     posthtml: {
       options: {
         use: [
-          require("posthtml-include")()
+          require("posthtml-include")({ root: './', encoding: 'utf-8' })
         ]
       },
       html: {
         files: [{
           expand: true,
-          src: ["source/*.html"],
+          cwd: "source",
+          src: ["*.html"],
           dest: "build"
         }]
       }
@@ -95,7 +96,8 @@ module.exports = function(grunt) {
         bsFiles: {
           src: [
             "build/*.html",
-            "build/css/*.css"
+            "build/css/*.css",
+            "build/js/*.js"
           ]
         },
         options: {
@@ -124,6 +126,19 @@ module.exports = function(grunt) {
       }
     },
 
+    copyjs: {
+      build: {
+        files: [{
+          expand: true,
+          cwd: "source",
+          src: [
+            "js/**"
+          ],
+          dest: "build"
+        }]
+      }
+    },
+
     clean: {
       build: ["build"]
     },
@@ -136,7 +151,11 @@ module.exports = function(grunt) {
       style: {
         files: ["source/sass/**/*.{scss,sass}"],
         tasks: ["sass", "postcss", "csso"]
-      }
+      },
+      js: {
+        files: ["source/js/*.js"],
+        tasks: ["copyjs"]
+      },
     }
   });
 
