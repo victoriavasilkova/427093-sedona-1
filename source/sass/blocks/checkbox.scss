@@ -1,3 +1,12 @@
+.checkbox {
+  @media ($tablet) {
+    width: 50%;
+  }
+  @media ($desktop) {
+    width: 25%;
+  }
+}
+
 .checkbox__input {
     display: none; }
 
@@ -25,7 +34,7 @@
 }
 
 .checkbox__input:checked + .checkbox__label::before {
-    background-image: url("../img/icon-tick.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

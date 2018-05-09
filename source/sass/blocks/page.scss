@@ -2,7 +2,7 @@
   @include text(18px, 26px, bold);
   max-width: 700px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 0 30px;
   text-align: center;
   @media ($tablet) {
@@ -16,7 +16,7 @@
   @include text(18px, 26px, bold);
   max-width: 500px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   padding: 0 30px;
   text-align: center;
   @media ($tablet) {
@@ -27,16 +27,23 @@
 
 .page__description {
   color: $text-color;
+  line-height: 24px;
   max-width: 500px;
   margin: 0 auto;
   margin-bottom: 30px;
-  padding: 0 30px;
+  padding: 0 20px;
   text-align: center;
+  &--form {
+    margin-bottom: 20px;
+  }
   @media ($tablet) {
     margin-bottom: 50px;
     padding: 0;
+    &--form {
+      margin-bottom: 60px;
+    }
   }
   @media ($tablet) {
-    margin-bottom: 75px;
+    margin-bottom: 50px;
   }
 }

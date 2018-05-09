@@ -1,19 +1,38 @@
 .modal {
   text-align: center;
+  display: none;
   margin: 0 auto;
   width: 320px;
   box-shadow: 0 3px 3px 3px #f2f2f2;
   &--failure {
-    padding: 0 50px;
-  }
-  @media ($tablet) {
-    width: 400px;
+    padding: 0 55px;
+    @media ($tablet) {
+      padding: 0 60px;
+      width: 400px;
+    }
   }
   &--success {
+    @media ($tablet) {
+      width: 648px;
+    }
+  }
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal__intro {
   @media ($tablet) {
-    width: 648px;
     padding: 0 95px;
   }
+}
+
+.modal__background {
+  padding: 20px 0;
+  background-color: #f2f2f2;
+  @media ($tablet) {
+    padding: 44px 95px;
   }
 }
 
@@ -36,17 +55,16 @@
 }
 
 .modal__button--failure {
-  padding: 20px 80px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   @media ($tablet) {
-    padding: 20px 122px;
+    min-width: 100%;
+    margin-bottom: 50px;
   }
 }
 
 .modal__button--success {
-  padding: 20px 70px;
-  margin-bottom: 20px;
+  width: 280px;
   @media ($tablet) {
-    width: 100%;
+  min-width: 100%;
   }
 }

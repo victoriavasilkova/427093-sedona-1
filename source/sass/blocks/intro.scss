@@ -1,10 +1,10 @@
 .intro {
   position: relative;
-  margin-bottom: 42px;
+  margin-bottom: 35px;
   width: 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #add5ed;
-  background-position: center center;
+  background-position: center -40px;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 50px;
@@ -12,27 +12,30 @@
   &--index {
     padding-top: 90px;
     padding-bottom: 90px;
+    background-position: center;
   }
   @media ($tablet) {
     padding-top: 95px;
     padding-bottom: 117px;
     margin-bottom: 75px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -180px;
     background-size: cover;
-  }
     &--index {
-      padding-top: 100px;
+      padding-top: 80px;
+      padding-bottom: 90px;
       margin-bottom: 50px;
+      background-position: center;
     }
     @media ($retina-dpi), ($retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
     }
+  }
   @media ($desktop) {
     padding-top: 100px;
     padding-bottom: 120px;
     margin-bottom: 110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-  }
     &--index {
       padding-top: 78px;
       margin-bottom: 50px;
@@ -41,6 +44,7 @@
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 1536 auto;
     }
+  }
   @media ($retina-dpi), ($retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -69,7 +73,7 @@
 
 .intro__img {
   display: block;
-  width: 280px;
+  width: 230px;
   height: auto;
   margin: 0 auto;
   @media ($tablet) {

@@ -4,7 +4,7 @@
   min-width: 180px;
   max-width: 330px;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 15px;
   border: none;
   @include text(21px, 26px, bold);
   text-align: center;
@@ -13,8 +13,18 @@
   text-transform: uppercase;
   cursor: pointer;
   vertical-align: top;
-  @media ($tablet) {
-    min-width: 272px;
-    max-width: 460px;
-  }
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
 }

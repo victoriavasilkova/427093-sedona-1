@@ -2,11 +2,14 @@
   position: relative;
   margin: 0 auto;
   margin-bottom: 150px;
+  cursor: pointer;
   @media ($tablet) {
     width: 84%;
+    margin-bottom: 40px;
   }
   @media ($desktop) {
     width: 66.666666%;
+    margin-bottom: 85px;
   }
 }
 
@@ -40,43 +43,118 @@
 
 .video__menu {
   position: absolute;
-  width: 100%;
-  bottom: -45px;
+  width: 88%;
+  bottom: -66px;
+  left: 50%;
+  transform: translateX(-50%);
+  @media ($tablet) {
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .video__play {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .video__duration {
   position: relative;
-  background-color: rgba(80, 76, 74, 0.6);
-  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
   height: 45px;
+  @media ($tablet) {
+    height: 92px;
+  }
 }
 
 .video__scale {
   position: absolute;
-  background-color: #f2f2f2;
+  background-color: rgba(255, 255, 255, 0.6);
   opacity: 0.6;
-  width: 84%;
   height: 3px;
   margin: 0 auto;
   top: 50%;
-  transform: translateY(-50%);
+  left: 22px;
+  right: 22px;
+  @media ($tablet) {
+    left: 92px;
+    right: 168px;
+  }
+}
+
+.video__bar {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  top: -4px;
+  left: 36px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 .video__controls {
   display: flex;
+  padding-left: 25px;
+  padding-right: 23px;
   background-color: #f2f2f2;
   height: 66px;
+  @media ($tablet) {
+    position: absolute;
+    width: 100%;
+    top: 15px;
+    bottom: 0;
+    background: transparent;
+    padding-left: 32px;
+    padding-right: 42px;
+  }
 }
 
 .video__icon {
   border: none;
+  background: transparent;
+  cursor: pointer;
+  @media ($tablet) {
+    path {
+      fill: $white-color;
+    }
+    polygon {
+      fill: $white-color;
+    }
+  }
+}
+
+@media ($mobile){
+  .video__icon:hover path,
+  .video__icon:focus path,
+  .video__icon:hover polygon,
+  .video__icon:focus polygon {
+    fill: #000000;
+  }
+  .video__icon:active path,
+  .video__icon:active polygon {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media ($tablet){
+  .video__icon:hover path,
+  .video__icon:focus path,
+  .video__icon:hover polygon,
+  .video__icon:focus polygon {
+    fill: rgba(255, 255, 255, 0.6);
+  }
+  .video__icon:active path,
+  .video__icon:active polygon {
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .video__repeat {
   margin-right: auto;
+}
+
+.video__fullscreen {
+  margin-left: 30px;
 }
