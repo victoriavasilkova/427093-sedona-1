@@ -2,42 +2,75 @@
   display: none;
  }
 
-.radio__label {
-    position: relative;
-    @include text(18px, 26px, bold);
-    text-transform: none;
-    margin-bottom: 25px;
-    padding-left: 80px;
-    vertical-align: middle;
-    &::before {
-      content: " ";
-      position: absolute;
-      width: 56px;
-      height: 56px;
-      background-color: #f2f2f2;
-      left: 0px;
-      top: 1px;
-      border-radius: 50%;
-      cursor: pointer;
-      top: 50%;
-      transform: translateY(-50%);
-      }
-      &::after {
-      content: " ";
-      position: absolute;
-      width: 22px;
-      height: 22px;
-      background-color: #000000;
-      left: 17px;
-      top: 3px;
-      border-radius: 50%;
-    }
+.radio__input:hover{
+  background-color: #e5e5e5;
+ }
+
+.radio__input:focus {
+  background-color: #d5d5d5;
 }
 
-  .radio__input:checked + .radio__label::after {
+.radio__label {
+  position: relative;
+  cursor: pointer;
+  @include text(18px, 26px, bold);
+  text-transform: none;
+  margin-bottom: 0px;
+  padding: 16px 0;
+  padding-left: 80px;
+  vertical-align: middle;
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background-color: #f2f2f2;
+    left: 0px;
+    top: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    background-color: #000000;
+    left: 18px;
+    top: 17px;
+    border-radius: 50%;
+    &:active::after {
+      background-color: #a4a4a4;
+    }
+  }
+}
+
+.radio__label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.radio__label:focus::before,
+.radio__label:active::before, {
+  background-color: #d5d5d5;
+}
+
+.radio__label:focus::after,
+.radio__label:active::after, {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.radio__input:checked + .radio__label::after {
     content: " ";
   }
 
-  .radio__input + .radio__label::after {
+.radio__input + .radio__label::after {
     content: none;
   }

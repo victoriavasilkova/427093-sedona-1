@@ -4,4 +4,21 @@
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
+  @media ($tablet) {
+    width: 100%;
+    margin-bottom: 55px;
+  }
+}
+
+.features__row {
+  &--picture {
+    background-color: $base-color;
+  }
+  &--icon {
+    margin-bottom: 40px;
+  }
+  @media ($tablet) {
+  display: flex;
+  margin-bottom: 0;
+ }
 }

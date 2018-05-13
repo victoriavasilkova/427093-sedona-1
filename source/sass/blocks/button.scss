@@ -1,13 +1,30 @@
 .button {
-  display: block;
-  width: 280px;
+  display: inline-block;
+  text-align: center;
+  min-width: 180px;
+  max-width: 330px;
   margin: 0 auto;
-  margin-bottom: 50px;
-  padding: 20px 30px;
+  padding: 15px;
+  border: none;
   @include text(21px, 26px, bold);
   text-align: center;
   background-color: $base-color;
   color: $white-color;
   text-transform: uppercase;
   cursor: pointer;
+  vertical-align: top;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #669ec0;
+}
+
+.button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
 }
