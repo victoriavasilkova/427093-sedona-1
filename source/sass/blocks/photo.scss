@@ -1,4 +1,5 @@
 .photo__list {
+  margin-bottom: 35px;
   @media ($tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -20,16 +21,16 @@
     padding: 0;
     width: 50%;
     border: none;
-  }
     &--main {
       width: 100%;
     }
+  }
   @media ($desktop) {
     width: 33.333333%;
-  }
     &--main {
       width: 100%;
     }
+  }
 }
 
 .photo__link {
@@ -53,7 +54,7 @@
   @media ($tablet) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px 20px;
     background-color: #f2f2f2;
     align-items: center;
   }

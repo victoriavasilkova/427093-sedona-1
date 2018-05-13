@@ -2,8 +2,8 @@
   display: none;
  }
 
- .radio__input:hover{
-   background-color: #e5e5e5;
+.radio__input:hover{
+  background-color: #e5e5e5;
  }
 
 .radio__input:focus {
@@ -67,10 +67,10 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-  .radio__input:checked + .radio__label::after {
+.radio__input:checked + .radio__label::after {
     content: " ";
   }
 
-  .radio__input + .radio__label::after {
+.radio__input + .radio__label::after {
     content: none;
   }

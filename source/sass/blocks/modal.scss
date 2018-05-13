@@ -43,14 +43,19 @@
 }
 
 .modal__title {
-    @include text(18px, 21px, bold);
+    @include text(18px, 26px, bold);
     padding-top: 45px;
     &--failure {
-      width: 180px;
+      width: 250px;
       margin: 0 auto;
     }
   @media ($desktop) {
-    @include text(30px, 26px, bold);
+    &--failure {
+      @include text(30px, 40px, bold);
+    }
+    &--success {
+      @include text(30px, 26px, bold);
+    }
   }
 }
 

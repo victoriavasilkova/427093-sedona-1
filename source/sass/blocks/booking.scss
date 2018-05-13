@@ -14,9 +14,10 @@
 .booking__title {
   @include text(21px, 26px, bold);
   padding: 0 30px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   @media ($tablet) {
     font-size: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -24,7 +25,10 @@
   @include text(14px, 24px, normal);
   color: $text-color;
   padding: 0 20px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
+  @media ($tablet) {
+    margin-bottom: 40px;
+  }
   @media ($desktop) {
     margin-bottom: 50px;
   }

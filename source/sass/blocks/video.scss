@@ -1,7 +1,7 @@
 .video {
   position: relative;
   margin: 0 auto;
-  margin-bottom: 150px;
+  margin-bottom: 120px;
   cursor: pointer;
   @media ($tablet) {
     width: 84%;
@@ -31,6 +31,7 @@
   line-height: 24px;
   @media ($tablet) {
     padding: 0 110px;
+    margin-bottom: 80px;
   }
   @media ($desktop) {
     padding: 0 190px;
@@ -115,6 +116,12 @@
   border: none;
   background: transparent;
   cursor: pointer;
+  &--repeat {
+    margin-right: auto;
+  }
+  &--fullscreen {
+    margin-left: 30px;
+  }
   @media ($tablet) {
     path {
       fill: $white-color;
@@ -149,12 +156,4 @@
   .video__icon:active polygon {
     fill: rgba(255, 255, 255, 0.3);
   }
-}
-
-.video__repeat {
-  margin-right: auto;
-}
-
-.video__fullscreen {
-  margin-left: 30px;
 }

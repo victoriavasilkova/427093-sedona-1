@@ -12,20 +12,20 @@
       <header class="header header--menu-closed header--nojs">
         <button class="header__menu-toggle" type="button"><span class="visually-hidden">Кнопка переключения состояния меню</span></button>
         <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link" href="index.html">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="photo.html">Фото и видео</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#">Форма отзыва</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="index.html">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--active">Форма отзыва</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
         <div class="header__logo-wrap">
           <a class="header__logo-link" href="index.html">
@@ -49,11 +49,11 @@
               <p class="reviews__block-title reviews__block-title--introduction">Представьтесь:</p>
               <div class="reviews__block-row">
                 <label class="reviews__label" for="name">Имя<sup>*</sup>:</label>
-                <input class="reviews__field field" type="text" name="name" id="name" placeholder="Петр">
+                <input class="reviews__field field" type="text" name="name" id="name" placeholder="Петр" required>
               </div>
               <div class="reviews__block-row">
                 <label class="reviews__label" for="surname">Фамилия<sup>*</sup>:</label>
-                <input class="reviews__field field" type="text" name="surname" id="surname" placeholder="Иванов">
+                <input class="reviews__field field" type="text" name="surname" id="surname" placeholder="Иванов" required>
               </div>
               <div class="reviews__block-row">
                 <label class="reviews__label" for="patronymic">Отчество:</label>
@@ -62,15 +62,15 @@
             </div>
             <div class="reviews__block reviews__block--info">
               <p class="reviews__block-title reviews__block-title--info reviews__decoration">Контактная информация:</p>
-              <div class="reviews__block-wrapper--info">
+              <div class="reviews__info">
                 <div class="reviews__block-contacts">
                   <label class="reviews__label reviews__label--contacts" for="telefon"><span class="reviews-hidden">Контактный</span> телефон<sup>*</sup>:</label>
-                  <input class="reviews__field reviews__field--contacts field" type="tel" name="telefon" id="telefon" placeholder="Введите телефон">
+                  <input class="reviews__field reviews__field--contacts field" type="tel" name="telefon" id="telefon" placeholder="Введите телефон" required>
                   <div class="reviews__block-icon reviews__block-icon--telefon" aria-label="Телефон"></div>
                 </div>
                 <div class="reviews__block-contacts">
                   <label class="reviews__label reviews__label--contacts" for="email">Электронная почта<sup>*</sup>:</label>
-                  <input class="reviews__field reviews__field--contacts field" type="email" name="email" id="email" placeholder="Введите e-mail">
+                  <input class="reviews__field reviews__field--contacts field" type="email" name="email" id="email" placeholder="Введите e-mail" required>
                   <div class="reviews__block-icon reviews__block-icon--email" aria-label="E-mail"></div>
                 </div>
               </div>
@@ -78,36 +78,36 @@
             <div class="reviews__block reviews__block--experience">
               <p class="reviews__block-title">Ваше общее впечатление:</p>
               <div class="reviews__block-row radio">
-                <input class="radio__input" type="radio" name="answer" id="1" checked="">
-                <label class="radio__label" for="1">Скорее положительное</label>
+                <input class="radio__input" type="radio" name="answer" id="1" checked>
+                <label class="radio__label" for="1" tabindex="0">Скорее положительное</label>
               </div>
               <div class="reviews__block-row radio">
                 <input class="radio__input" type="radio" name="answer" id="2">
-                <label class="radio__label" for="2">Скорее отрицательное</label>
+                <label class="radio__label" for="2" tabindex="0">Скорее отрицательное</label>
               </div>
               <div class="reviews__block-row radio">
                 <input class="radio__input" type="radio" name="answer" id="3">
-                <label class="radio__label" for="3">Затрудняюсь ответить</label>
+                <label class="radio__label" for="3" tabindex="0">Затрудняюсь ответить</label>
               </div>
             </div>
             <div class="reviews__block reviews__block--places">
               <p class="reviews__block-title reviews__decoration">Посещенные достопримечательности:</p>
               <div class="reviews__block-wrapper">
                 <div class="reviews__block-row checkbox">
-                  <input class="checkbox__input" type="checkbox" name="bridge" id="bridge-field" checked="">
-                  <label class="checkbox__label" for="bridge-field">Мост Дьявола</label>
+                  <input class="checkbox__input" type="checkbox" name="bridge" id="bridge-field" checked>
+                  <label class="checkbox__label" for="bridge-field" tabindex="0">Мост Дьявола</label>
                 </div>
                 <div class="reviews__block-row checkbox">
-                  <input class="checkbox__input" type="checkbox" name="mountain" id="mountain-field" checked="">
-                  <label class="checkbox__label" for="mountain-field">Гора-колокол</label>
+                  <input class="checkbox__input" type="checkbox" name="mountain" id="mountain-field" checked>
+                  <label class="checkbox__label" for="mountain-field" tabindex="0">Гора-колокол</label>
                 </div>
                 <div class="reviews__block-row checkbox">
-                  <input class="checkbox__input" type="checkbox" name="park" id="park-field" checked="">
-                  <label class="checkbox__label" for="park-field">Слайд-парк</label>
+                  <input class="checkbox__input" type="checkbox" name="park" id="park-field" checked>
+                  <label class="checkbox__label" for="park-field" tabindex="0">Слайд-парк</label>
                 </div>
                 <div class="reviews__block-row checkbox">
                   <input class="checkbox__input" type="checkbox" name="rocks" id="rocks-field">
-                  <label class="checkbox__label" for="rocks-field">Красные скалы</label>
+                  <label class="checkbox__label" for="rocks-field" tabindex="0">Красные скалы</label>
                 </div>
               </div>
             </div>
@@ -142,27 +142,17 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com" aria-label="Твиттер">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
-                  <g id="W6EeEF_1_">
-                    <g>
-                      <path fill="#ffffff" fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"></path>
-                    </g>
-                  </g>
-                </svg>
+                <include src="build/img/icon-twitter.svg"></include>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Фейсбук">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
-                  <path fill="#ffffff" d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"></path>
-                </svg>
+                <include src="build/img/icon-facebook.svg"></include>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://youtube.com" aria-label="Youtube">
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
-                  <path fill="#ffffff" d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"></path>
-                </svg>
+                <include src="build/img/icon-youtube.svg"></include>
               </a>
             </li>
           </ul>
@@ -178,5 +168,6 @@
       </footer>
     </div>
     <script src="js/menu.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

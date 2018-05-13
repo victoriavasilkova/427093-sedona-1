@@ -55,11 +55,15 @@
 }
 
 .menu__item:nth-child(4n+2) {
-  margin-right: 10%;
+  @media ($tablet) {
+    margin-right: 10%;
+  }
 }
 
 .menu__item:nth-child(4n+3) {
-  margin-left: 10%;
+  @media ($tablet) {
+    margin-left: 10%;
+  }
 }
 
 .menu__link {

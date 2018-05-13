@@ -8,7 +8,8 @@
 }
 
 .checkbox__input {
-    display: none; }
+    display: none;
+  }
 
 .checkbox__label {
   cursor: pointer;
@@ -33,6 +34,7 @@
     transform: translateY(-50%);
   }
 }
+
 .checkbox__label:hover::before {
   background-color: #e5e5e5;
 }

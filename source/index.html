@@ -12,20 +12,20 @@
       <header class="header header--menu-closed header--nojs">
         <button class="header__menu-toggle" type="button"><span class="visually-hidden">Кнопка переключения состояния меню</span></button>
         <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a class="menu__link menu__link--active" href="#">Главная</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="photo.html">Фото и видео</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="menu__item">
-                <a class="menu__link" href="#">HTML Academy</a>
-              </li>
-            </ul>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
         </nav>
         <div class="header__logo-wrap">
           <a class="header__logo-link" href="#">
@@ -39,13 +39,13 @@
       </header>
       <main class="page">
         <div class="intro intro--index">
-          <img class="intro__img" src="img/text-sedona-index.svg" alt="Welcome to Sedona">
+          <img class="intro__img intro__img--index" src="img/text-sedona-index.svg" alt="Welcome to Sedona">
         </div>
         <h2 class="page__caption">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего!</h2>
-        <p class="page__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <p class="page__description page__description--index">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <section class="features">
           <div class="features__list">
-            <div class="feature-row feature-row--picture">
+            <div class="features__row features__row--picture">
               <div class="feature feature--blue">
                 <h3 class="feature__title feature__title--blue">Настоящий городок</h3>
                 <div class="feature__number feature__number--blue">№1</div>
@@ -59,7 +59,7 @@
                 </picture>
               </div>
             </div>
-            <div class="feature-row feature-row--icon">
+            <div class="features__row features__row--icon">
               <div class="feature feature--icon feature--icon-home">
                 <h3 class="feature__title feature__title--icon">Жилье</h3>
                 <p class="feature__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -73,7 +73,7 @@
                 <p class="feature__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </div>
-            <div class="feature-row feature-row--picture">
+            <div class="features__row features__row--picture">
               <div class="feature feature--blue">
                 <h3 class="feature__title feature__title--blue">Там есть мост дьявола</h3>
                 <div class="feature__number feature__number--blue">№2</div>
@@ -87,7 +87,7 @@
                 </picture>
               </div>
             </div>
-            <div class="feature-row feature__items--grey">
+            <div class="features__row feature__items--grey">
               <div class="feature feature--grey">
                 <h3 class="feature__title feature__title--grey">Небольшая площадь</h3>
                 <div class="feature__number">№3</div>
@@ -109,9 +109,9 @@
         <section class="booking">
           <h2 class="booking__title">Заинтересовались?</h2>
           <p class="booking__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="button booking__button">Найти гостиницу</a>
+          <a class="button booking__button" href="findhotel.html">Найти гостиницу</a>
         </section>
-        <section class="map-canvas" id="map-canvas">
+        <section class="map" id="map-canvas">
           <h2 class="visually-hidden">Карта</h2>
         </section>
       </main>
@@ -126,7 +126,7 @@
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com" aria-label="Фейсбук">
-              <include src="build/img/icon-facebook.svg"></include>
+                <include src="build/img/icon-facebook.svg"></include>
               </a>
             </li>
             <li class="social__item">
@@ -149,5 +149,6 @@
     <script src="js/menu.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChl-mWB1fpAZS-aIfXsvcp7HUcL-cGWYM&callback=initMap" async defer></script>
     <script src="js/map.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>
