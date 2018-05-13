@@ -47,7 +47,7 @@
       padding-left: 8%;
       margin-bottom: 40px;
       @media ($desktop) {
-        padding-left: 6%;
+        padding-left: 80px;
       }
     }
     &--places {
@@ -180,6 +180,9 @@
   &--contacts {
     padding-right: 60px;
     position: relative;
+    @media ($desktop) {
+      width: 100px;
+    }
   }
 }
 
