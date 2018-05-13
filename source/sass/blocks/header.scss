@@ -1,8 +1,8 @@
 .header {
-    position: relative;
-    @media ($tablet) {
-      margin: 0;
-    }
+  position: relative;
+  @media ($tablet) {
+    margin: 0;
+  }
 }
 
 .header__logo-wrap {
@@ -20,6 +20,7 @@
   z-index: 2;
   display: block;
   margin: 0 auto;
+
   top: 0;
   left: 50%;
   transform: translateX(-50%);
