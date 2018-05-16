@@ -7,8 +7,8 @@
     padding-left: 70px;
     padding-bottom: 0;
     @media ($tablet) {
-      padding-left: 5%;
-      padding-right: 5%;
+      padding-left: 5.5%;
+      padding-right: 5.5%;
       padding-bottom: 60px;
       padding-top: 0;
       width: 33.333333%;
@@ -17,15 +17,30 @@
       padding-bottom: 85px;
     }
   }
+  &--icon-home {
+    @media ($desktop) {
+      padding: 0 5.5% 85px;
+    }
+  }
+  &--icon-food {
+    @media ($desktop) {
+      padding: 0 4% 85px;
+    }
+  }
+  &--icon-souvenir {
+    @media ($desktop) {
+      padding: 0 8.5% 85px;
+    }
+  }
   &--blue {
     padding: 40px ;
     background-color: $base-color;
     @media ($tablet) {
     width: 33.333333%;
-    padding: 40px 6%;
+    padding: 40px 5%;
     }
     @media ($desktop) {
-    padding: 45px 6%;
+    padding: 45px 5.5%;
     }
   }
   &--grey {
@@ -112,13 +127,17 @@
   color: $text-color;
   margin: 0;
   padding: 0 6px;
-  &--blue {
-    color: $white-color;
-    padding: 0;
-  }
   @media ($tablet) {
     text-align:center;
     padding: 0;
+  }
+  &--blue {
+    color: $white-color;
+  }
+  &--blue-second {
+    @media ($desktop) {
+      padding: 0 20px;
+    }
   }
 }
 
