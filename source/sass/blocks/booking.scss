@@ -28,9 +28,16 @@
   margin-bottom: 35px;
   @media ($tablet) {
     margin-bottom: 40px;
+    padding: 0;
   }
   @media ($desktop) {
     margin-bottom: 50px;
+  }
+}
+
+.booking__note {
+  @media ($tablet) {
+    display: block;
   }
 }
 

@@ -7,8 +7,8 @@
     padding-left: 70px;
     padding-bottom: 0;
     @media ($tablet) {
-      padding-left: 5.5%;
-      padding-right: 5.5%;
+      padding-left: 6.5%;
+      padding-right: 6.5%;
       padding-bottom: 60px;
       padding-top: 0;
       width: 33.333333%;
@@ -19,7 +19,7 @@
   }
   &--icon-home {
     @media ($desktop) {
-      padding: 0 5.5% 85px;
+      padding: 0 5.5% 60px;
     }
   }
   &--icon-food {
@@ -28,19 +28,23 @@
     }
   }
   &--icon-souvenir {
+    @media ($tablet) {
+      padding-left: 5.5%;
+      padding-right: 5.5%;
+    }
     @media ($desktop) {
       padding: 0 8.5% 85px;
     }
   }
   &--blue {
-    padding: 40px ;
+    padding: 40px 35px;
     background-color: $base-color;
     @media ($tablet) {
     width: 33.333333%;
-    padding: 40px 5%;
+    padding: 40px 6%;
     }
     @media ($desktop) {
-    padding: 45px 5.5%;
+    padding: 50px 5.5%;
     }
   }
   &--grey {
@@ -48,7 +52,7 @@
     padding: 25px 30px;
     @media ($tablet) {
     width: 33.333333%;
-    padding: 45px 7%;
+    padding: 45px 6%;
     }
     @media ($desktop) {
       padding: 45px 4%;
@@ -111,14 +115,25 @@
       padding-top: 155px;
       margin-bottom: 20px;
     }
+    &--last {
+      padding: 0 10px;
+    }
   }
   @media ($desktop) {
     &--blue {
       padding: 0 40px;
+      margin-bottom: 15px;
     }
     &--grey {
       padding: 0 80px;
+      margin-bottom: 10px;
     }
+  }
+}
+
+.feature__title-note {
+  @media ($tablet) {
+    display: block;
   }
 }
 
@@ -135,6 +150,11 @@
     color: $white-color;
   }
   &--blue-second {
+    @media ($desktop) {
+      padding: 0 20px;
+    }
+  }
+  &--grey {
     @media ($desktop) {
       padding: 0 20px;
     }
